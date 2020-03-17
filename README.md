@@ -1,8 +1,8 @@
 # kg_dostoyevsky1_2020
+#### Python script to test strings for one-to-one mapping (isomorphism)
 
-### Python script to test strings for one-to-one mapping (isomorphism)
 
-##### Implementation method 1 (with Python installed) -- Clone repo to local machine >> cd into repo >> run script
+#### Implementation method 1 (with Python installed)
 
 Clone repo:
 ```
@@ -19,8 +19,9 @@ Run script:
 python3 main.py 123 321
 ```
 
-##### Implementation method 2 (with Docker installed) -- Pull docker image to local machine >> run container >> run script
-##### Docker image: https://hub.docker.com/repository/docker/dostoyevsky/isomorphism
+
+#### Implementation method 2 (with Docker installed)
+#### Docker image: https://hub.docker.com/repository/docker/dostoyevsky/isomorphism
 
 Pull image:
 ```
