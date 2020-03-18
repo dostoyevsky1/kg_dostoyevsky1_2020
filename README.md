@@ -16,7 +16,7 @@ cd kg_dostoyevsky1_2020/
 
 Run script:
 ```
-python3 main.py 123 321
+python3 main.py [arg1] [arg2]
 ```
 
 
@@ -35,14 +35,32 @@ docker run -it dostoyevsky/isomorphism:1.0 /bin/bash
 
 Run script:
 ```
-python3 main.py 123 321
+python3 main.py [arg1] [arg2]
 ```
 
 OR
 
 Run container + script:
 ```
-docker run -it dostoyevsky/isomorphism:1.0 python main.py 123 321
+docker run -it dostoyevsky/isomorphism:1.0 python main.py [arg1] [arg2]
 ```
 
+#### Examples:
 
+INPUT:
+```
+python main.py bar foo
+```
+OUTPUT:
+```
+False
+```
+
+INPUT:
+```
+python main.py 123 321
+```
+OUTPUT:
+```
+True
+```
