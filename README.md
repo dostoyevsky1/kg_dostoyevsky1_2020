@@ -64,3 +64,12 @@ OUTPUT:
 ```
 True
 ```
+
+INPUT:
+```
+python main.py $'\t' $'\t'
+```
+OUTPUT:
+```
+Inputs must be whitespace-free continuous strings. No isomorphism by default
+```
