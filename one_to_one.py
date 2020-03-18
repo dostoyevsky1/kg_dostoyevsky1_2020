@@ -14,7 +14,7 @@ def one_to_one(s1: str, s2: str) -> bool:
 		raise TypeError('\n' + 'Input must be a string type' + '\n')
 	if len(s1) == 0 or len(s2) == 0:
 		raise ValueError('\n' + 'Inputs cannot be empty strings. No isomorphism by default' + '\n')
-	if s1.find(' ') > -1 or s2.find(' ') > -1:
+	if any([char.isspace() for char in s1+s2]):
 		raise ValueError('\n' + 'Inputs must be whitespace-free continuous strings. No isomorphism by default' + '\n')
 	if (len(s1) != len(s2)):
 		raise ValueError('\n' + 'Inputs must be of equal length. No isomorphism by default' + '\n')
