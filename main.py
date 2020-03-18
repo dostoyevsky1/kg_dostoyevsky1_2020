@@ -1,7 +1,6 @@
 from sys import argv
 from one_to_one import one_to_one
 
-
 if __name__ == '__main__':
 	try:
 		s1 = argv[1]
