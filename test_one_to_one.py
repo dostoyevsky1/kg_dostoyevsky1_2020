@@ -17,6 +17,8 @@ class test_one_to_one(unittest.TestCase):
 		self.assertRaises(ValueError, one_to_one, '333', '   ')
 		self.assertRaises(ValueError, one_to_one, '321 321','123 123')
 		self.assertRaises(ValueError, one_to_one, '', '')
+		self.assertRaises(ValueError, one_to_one, '3', '\t')
+		self.assertRaises(ValueError, one_to_one, '\n', '\n')
 		
 
 
