@@ -1,4 +1,15 @@
 def one_to_one(s1: str, s2: str) -> bool:
+	"""
+	Check for one-to-one character mapping(isomorphism) between two strings.
+
+	Parameters:
+		s1 (str): non-empty continuous string
+		s2 (str): non-empty continuous string
+
+	Returns:
+		bool: TRUE if one-to-one mapping is present, FALSE otherwise.
+	"""
+
 	if not isinstance(s1, str) or not isinstance(s2, str):
 		raise TypeError('\n' + 'Input must be a string type' + '\n')
 	if len(s1) == 0 or len(s2) == 0:
