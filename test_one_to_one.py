@@ -9,16 +9,18 @@ class test_one_to_one(unittest.TestCase):
 		self.assertEqual(one_to_one('helLo','jePpr'), True)
 		self.assertEqual(one_to_one('title','paper'), True)
 		self.assertEqual(one_to_one('123', '321'), True)
+		self.assertEqual(one_to_one('12 3', '32 1', False), True)
+
 
 	def test_values(self):
 		# Make sure value errors are raised when necessary
 		self.assertRaises(ValueError, one_to_one, 'foo','b')
 		self.assertRaises(ValueError, one_to_one, 'f','bar')
-		self.assertRaises(ValueError, one_to_one, '333', '   ')
-		self.assertRaises(ValueError, one_to_one, '321 321','123 123')
-		self.assertRaises(ValueError, one_to_one, '', '')
-		self.assertRaises(ValueError, one_to_one, '3', '\t')
-		self.assertRaises(ValueError, one_to_one, '\n', '\n')
+		self.assertRaises(ValueError, one_to_one, '333', '   ', True)
+		self.assertRaises(ValueError, one_to_one, '321 321','123 123', True)
+		self.assertRaises(ValueError, one_to_one, '', '', True)
+		self.assertRaises(ValueError, one_to_one, '3', '\t', True)
+		self.assertRaises(ValueError, one_to_one, '\n', '\n', True)
 		
 
 
