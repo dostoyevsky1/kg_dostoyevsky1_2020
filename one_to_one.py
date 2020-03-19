@@ -5,7 +5,7 @@ def one_to_one(s1: str, s2: str, whitespace_free: bool = True) -> bool:
 	Parameters:
 		s1 (str): non-empty string
 		s2 (str): non-empty string
-		whitespace_free (bool): True or False flag to process whitespace as characters
+		whitespace_free (bool): True or False flag to process whitespace as characters [-w , --whitespace]
 
 	Returns:
 		bool: True if one-to-one mapping is present, False otherwise.
