@@ -1,4 +1,3 @@
-from sys import argv
 from one_to_one import one_to_one
 import argparse
 
