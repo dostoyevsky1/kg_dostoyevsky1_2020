@@ -3,8 +3,8 @@
 
 Parameters:
 
-	s1 (str): non-empty string
-	s2 (str): non-empty string
+	s1 (str): non-empty string [arg1]
+	s2 (str): non-empty string [arg2]
 	whitespace_free (bool): True or False flag to process whitespace as characters [-w , --whitespace]
 
 Returns:
