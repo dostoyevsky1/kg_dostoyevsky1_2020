@@ -3,13 +3,13 @@
 
 Parameters:
 
-		s1 (str): non-empty string
-		s2 (str): non-empty string
-            whitespace_free (bool): True or False flag to process whitespace as characters [-w , --whitespace]
+	s1 (str): non-empty string
+	s2 (str): non-empty string
+	whitespace_free (bool): True or False flag to process whitespace as characters [-w , --whitespace]
 
 Returns:
 
-		bool: True if one-to-one mapping is present, False otherwise.
+	bool: True if one-to-one mapping is present, False otherwise.
 
 #### Implementation method 1 (with Python installed)
 
