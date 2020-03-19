@@ -3,8 +3,9 @@ def one_to_one(s1: str, s2: str, whitespace_free: bool = True) -> bool:
 	Check for one-to-one character mapping(isomorphism) between two strings.
 
 	Parameters:
-		s1 (str): non-empty continuous string
-		s2 (str): non-empty continuous string
+		s1 (str): non-empty string
+		s2 (str): non-empty string
+		whitespace_free (bool): True or False flag to process whitespace as characters
 
 	Returns:
 		bool: TRUE if one-to-one mapping is present, FALSE otherwise.
@@ -17,7 +18,7 @@ def one_to_one(s1: str, s2: str, whitespace_free: bool = True) -> bool:
 
 	if whitespace_free:
 		if any([char.isspace() for char in s1+s2]):
-			raise ValueError('\n' + 'Inputs must be whitespace-free continuous strings. No isomorphism by default' + '\n')
+			raise ValueError('\n' + 'Inputs must be whitespace-free strings. No isomorphism by default' + '\n')
 
 	if (len(s1) != len(s2)):
 		raise ValueError('\n' + 'Inputs must be of equal length. No isomorphism by default' + '\n')
