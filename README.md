@@ -80,7 +80,7 @@ python main.py $'\t' $'\t'
 ```
 OUTPUT:
 ```
-Inputs must be whitespace-free continuous strings. No isomorphism by default
+Inputs must be whitespace-free strings. No isomorphism by default
 ```
 
 INPUT:
