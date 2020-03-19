@@ -8,7 +8,7 @@ def one_to_one(s1: str, s2: str, whitespace_free: bool = True) -> bool:
 		whitespace_free (bool): True or False flag to process whitespace as characters
 
 	Returns:
-		bool: TRUE if one-to-one mapping is present, FALSE otherwise.
+		bool: True if one-to-one mapping is present, False otherwise.
 	"""
 
 	if not isinstance(s1, str) or not isinstance(s2, str):
