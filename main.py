@@ -13,10 +13,9 @@ if __name__ == '__main__':
 
 	try:
 		one_to_one(args.s1, args.s2, args.whitespace)
-	except IndexError:
-		print('\n' + 'Input must consist of 2 elements' + '\n')
 	except Exception as e:
-		print(e)
+		print(f'Exception occurred {e}')
+		raise
 		
 
 	
