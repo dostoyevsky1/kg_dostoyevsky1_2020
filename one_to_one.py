@@ -29,7 +29,7 @@ def one_to_one(s1: str, s2: str, whitespace_free: bool = True) -> bool:
 		print(is_isomorphic)
 	except Exception as e:
 		print(f'Exception occurred {e}')
-		# raise
+		raise
 
 	return is_isomorphic
 
